@@ -1,0 +1,315 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.disgen.aisSerialSender.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="电文ID" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="转发指示器" />
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="用户ID" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView02"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="导航状态" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView03"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="纬度" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView04"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="经度" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView05"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="航向" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView06"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="Rotais" />
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView07"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="Sog" />
+
+    <TextView
+        android:id="@+id/TextView09"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView08"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="Cog" />
+
+    <TextView
+        android:id="@+id/TextView10"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView09"
+        android:textSize="20px"
+        android:background="@drawable/tvbar"
+        android:text="时戳" />
+
+    <TextView
+        android:id="@+id/TextView11"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView01"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView12"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView02"
+        android:layout_alignLeft="@+id/TextView11"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView13"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView03"
+        android:layout_alignLeft="@+id/TextView12"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView14"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView04"
+        android:layout_alignLeft="@+id/TextView13"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView15"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView05"
+        android:layout_alignLeft="@+id/TextView14"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView16"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView06"
+        android:layout_alignLeft="@+id/TextView15"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView17"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView07"
+        android:layout_alignLeft="@+id/TextView16"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView18"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView08"
+        android:layout_alignLeft="@+id/TextView17"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView19"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView09"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView08"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView20"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView10"
+        android:layout_alignLeft="@+id/TextView19"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView21"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView10"
+        android:layout_alignBottom="@+id/TextView10"
+        android:layout_alignLeft="@+id/TextView20"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView22"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView10"
+        android:background="@drawable/tvbar"
+        android:text="本机IP"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView23"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView22"
+        android:layout_alignBottom="@+id/TextView22"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView22"
+        android:background="@drawable/tvbar"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/TextView24"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView22"
+        android:background="@drawable/tvbar"
+        android:text="连接IP"
+        android:textSize="20px" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="500dp"
+        android:layout_alignBottom="@+id/TextView24"
+        android:layout_alignTop="@+id/TextView24"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toRightOf="@+id/TextView24"
+        android:textSize="10px"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/editText1"
+        android:text="连接" />
+
+    <TextView
+        android:id="@+id/TextView25"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView24"
+        android:background="@drawable/tvbar"
+        android:text="AES密码"
+        android:textSize="20px" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView25"
+        android:layout_alignTop="@+id/TextView25"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toRightOf="@+id/TextView25"
+        android:textSize="10px"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/Button01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toRightOf="@+id/editText2"
+        android:text="确定" />
+
+</RelativeLayout>
+
